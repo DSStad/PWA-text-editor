@@ -25,7 +25,7 @@ module.exports = () => {
       }),
       // inject ours custom service worker
       new InjectManifest({
-        swSRC: "./src-sw.js",
+        swSrc: "./src-sw.js",
         swDest: "src-sw.js",
       }),
       // creates a manifest.json file
@@ -37,8 +37,8 @@ module.exports = () => {
         description: "Take notes with Javascript syntax highlighting",
         background_color: "#225ca3",
         theme_color: "#225ca3",
-        start_url: "./",
-        publicPath: "./",
+        start_url: "/",
+        publicPath: "/",
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
